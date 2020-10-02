@@ -13,17 +13,22 @@ function Form() {
         <form onSubmit={handleSubmit}>
             <div>
                 <label>Username</label>
-                <input type='text' value={username} onChange={() => setUsername()}/>
+                <input type='text'
+                       value={username}
+                       onChange={(event) => setUsername(event.target.value)}/>
             </div>
 
             <div>
                 <label>Comments</label>
-                <textarea value={comment} onChange={() => setComment()}/>
+                <textarea
+                    value={comment}
+                    onChange={(event) => setComment(event.target.value)}/>
             </div>
 
             <div>
                 <label>Topic</label>
-                <select value={topic} onChange={() => setTopic()}>
+                <select value={topic}
+                        onChange={(event) => setTopic(event.target.value)}>
                     <option value="react">React</option>
                     <option value="angular">Angular</option>
                     <option value="vue">Vue</option>

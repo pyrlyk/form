@@ -1,0 +1,28 @@
+
+.form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: peru;
+    color: white;
+    border-bottom: 3px solid #26282c;
+    font-size: 20px;
+    font-weight:700;    
+    border-radius:22px;
+
+}
+.input{
+        display: flex;
+        padding: 12px;
+        height: 4vh;         
+}
+.button {
+    color: #016898;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: inherit;
+}
+.button:hover {
+    color: black;
+}
